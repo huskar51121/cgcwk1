@@ -1,0 +1,24 @@
+﻿  draw.cpp
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(29,7): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(32,7): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(35,16): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(38,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(70,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(74,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(76,49): warning C4244: “参数”: 从“float”转换到“Surface::Index”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(76,31): warning C4244: “参数”: 从“float”转换到“Surface::Index”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(88,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(90,49): warning C4244: “参数”: 从“float”转换到“Surface::Index”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(90,35): warning C4244: “参数”: 从“float”转换到“Surface::Index”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(131,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(151,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(205,45): warning C4244: “参数”: 从“float”转换到“Surface::Index”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(205,34): warning C4244: “参数”: 从“float”转换到“Surface::Index”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(212,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(217,15): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(218,15): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(238,15): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(239,15): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(282,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\draw.cpp(301,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  draw2d.vcxproj -> C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\lib\draw2d-debug-x64-msc-v143.lib

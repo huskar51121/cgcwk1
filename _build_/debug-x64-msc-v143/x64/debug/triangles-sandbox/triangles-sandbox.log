@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\surface.inl(37,59): warning C4100: “aY”: 未引用的形参
+  (编译源文件“main.cpp”)
+  
+C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\draw2d\surface.inl(37,49): warning C4100: “aX”: 未引用的形参
+  (编译源文件“main.cpp”)
+  
+  triangles-sandbox.vcxproj -> C:\Users\HP\Desktop\Graphics\cwk1\cw1\cw1\bin\triangles-sandbox-debug-x64-msc-v143.exe
