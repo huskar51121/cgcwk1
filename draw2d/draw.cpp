@@ -10,14 +10,14 @@ Vec2f get_cross_point(float k1, float k2, Vec2f aP1, Vec2f aP2)
 {
 	double b;
 	double b1;
-	if (isinf(k1)) {
+	if (std::isinf(k1)) {
 		b = aP1.x;
 	}
 	else {
 		b = aP1.y - k1 * aP1.x;
 	}
 	
-	if (isinf(k2)) {
+	if (std::isinf(k2)) {
 		b1 = aP2.x;
 	}
 	else {
@@ -25,10 +25,10 @@ Vec2f get_cross_point(float k1, float k2, Vec2f aP1, Vec2f aP2)
 	}
 
 	float x;
-	if (isinf(k1)) {
+	if (std::isinf(k1)) {
 		x = b;
 	}
-	else if(isinf(k2)){
+	else if(std::isinf(k2)){
 		x = b1;
 	}
 	else {
@@ -42,11 +42,11 @@ Vec2f get_cross_point(float k1, float k2, Vec2f aP1, Vec2f aP2)
 
 void draw_line_solid( Surface& aSurface, Vec2f aBegin, Vec2f aEnd, ColorU8_sRGB aColor )
 {
-	if (isinf(aBegin.x) || isinf(aBegin.y)) {
+	if (std::isinf(aBegin.x) || std::isinf(aBegin.y)) {
 		//printf("somepoint is inf");
 		return;
 	}
-	if (isinf(aEnd.x) || isinf(aEnd.y)) {
+	if (std::isinf(aEnd.x) || std::isinf(aEnd.y)) {
 		//printf("somepoint is inf");
 		return;
 	}
@@ -114,7 +114,7 @@ void draw_triangle_wireframe( Surface& aSurface, Vec2f aP0, Vec2f aP1, Vec2f aP2
 }
 void draw_triangle_solid( Surface& aSurface, Vec2f aP0, Vec2f aP1, Vec2f aP2, ColorU8_sRGB aColor )
 {
-	if (isinf(aP0.x) || isinf(aP0.y) || isinf(aP1.x) || isinf(aP1.y) || isinf(aP2.x) || isinf(aP2.y)) {
+	if (std::isinf(aP0.x) || std::isinf(aP0.y) || std::isinf(aP1.x) || std::isinf(aP1.y) || std::isinf(aP2.x) || std::isinf(aP2.y)) {
 		return;
 	}
 	if ((pow(aP2.x - aP0.x, 2) + pow(aP2.x - aP0.x, 2)) < (pow(aP1.x - aP0.x, 2) + pow(aP1.x - aP0.x, 2))) {
@@ -131,7 +131,7 @@ void draw_triangle_solid( Surface& aSurface, Vec2f aP0, Vec2f aP1, Vec2f aP2, Co
 			int the_y = floor(i * slope02);
 			Vec2f thispoint = Vec2f(i + aP0.x, the_y + aP0.y);
 			Vec2f cross = get_cross_point(slope12, slope01, thispoint, aP0);
-			if (isinf(cross.x) || isinf(cross.y)) {
+			if (std::isinf(cross.x) || std::isinf(cross.y)) {
 				draw_line_solid(aSurface, aP0, aP1, aColor);
 			}
 			else {
@@ -151,7 +151,7 @@ void draw_triangle_solid( Surface& aSurface, Vec2f aP0, Vec2f aP1, Vec2f aP2, Co
 			int the_x = floor(i / slope02);
 			Vec2f thispoint = Vec2f(the_x + aP0.x, i + aP0.y);
 			Vec2f cross = get_cross_point(slope12, slope01, thispoint, aP0);
-			if (isinf(cross.x) || isinf(cross.y)) {
+			if (std::isinf(cross.x) || std::isinf(cross.y)) {
 				draw_line_solid(aSurface, aP0, aP1, aColor);
 			}
 			else {
@@ -205,7 +205,7 @@ void draw_point_with_color(Surface& aSurface, Vec2f thepoint, Vec2f aP0, Vec2f a
 	aSurface.set_pixel_srgb(thepoint.x,thepoint.y,thecolor);
 }
 void draw_line_with_color(Surface& aSurface, Vec2f aBegin, Vec2f aEnd, Vec2f aP0, Vec2f aP1, Vec2f aP2, ColorF aC0, ColorF aC1, ColorF aC2) {
-	if( isinf(aEnd.y) || isinf(aEnd.x)){
+	if(std::isinf(aEnd.y) || std::isinf(aEnd.x)){
 		//printf("cross is inf");
 		return;
 	}
@@ -256,7 +256,7 @@ void draw_line_with_color(Surface& aSurface, Vec2f aBegin, Vec2f aEnd, Vec2f aP0
 }
 void draw_triangle_interp( Surface& aSurface, Vec2f aP0, Vec2f aP1, Vec2f aP2, ColorF aC0, ColorF aC1, ColorF aC2 )
 {
-	if (isinf(aP0.x) || isinf(aP0.y) || isinf(aP1.x) || isinf(aP1.y) || isinf(aP2.x) || isinf(aP2.y)) {
+	if (std::isinf(aP0.x) || std::isinf(aP0.y) || std::isinf(aP1.x) || std::isinf(aP1.y) || std::isinf(aP2.x) || std::isinf(aP2.y)) {
 		return;
 	}
 	/*printf("aP0 is %f and %f\n", aP0.x, aP0.y);
@@ -282,7 +282,7 @@ void draw_triangle_interp( Surface& aSurface, Vec2f aP0, Vec2f aP1, Vec2f aP2, C
 			int the_y = floor(i * slope02);
 			Vec2f thispoint = Vec2f(i + aP0.x, the_y + aP0.y);
 			Vec2f cross = get_cross_point(slope12, slope01, thispoint, aP0);
-			if (isinf(cross.x) || isinf(cross.y)) {
+			if (std::isinf(cross.x) || std::isinf(cross.y)) {
 				draw_line_with_color(aSurface, aP0, aP1, aP0, aP1, aP2, aC0, aC1, aC2);
 			}
 			else {
@@ -301,7 +301,7 @@ void draw_triangle_interp( Surface& aSurface, Vec2f aP0, Vec2f aP1, Vec2f aP2, C
 			int the_x = floor(i / slope02);
 			Vec2f thispoint = Vec2f(the_x + aP0.x, i + aP0.y);
 			Vec2f cross = get_cross_point(slope12, slope01, thispoint, aP0);
-			if (isinf(cross.x) || isinf(cross.y)) {
+			if (std::isinf(cross.x) || std::isinf(cross.y)) {
 				draw_line_with_color(aSurface, aP0, aP1, aP0, aP1, aP2, aC0, aC1, aC2);
 			}
 			else {
